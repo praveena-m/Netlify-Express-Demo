@@ -8,7 +8,7 @@ const router = express.Router();
 router.get('/',(rez,res)=>
 {
     res.json({
-        'hello':'hii'
+        'hello':'world'
     });
 });
 
