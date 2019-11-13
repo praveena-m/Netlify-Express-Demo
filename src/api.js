@@ -12,5 +12,18 @@ router.get('/',(rez,res)=>
     });
 });
 
+router.get('/courses',(rez,res)=>
+{
+    res.json([{
+        'course':'course1'
+    },
+    {
+        'course':'dsfsdfsdf'
+    },
+    {
+        'course':'fsdfsdff'
+    }]);
+});
+
 app.use('/.netlify/functions/api', router)
 module.exports.handler = serverless(app);
